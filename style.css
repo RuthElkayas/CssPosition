@@ -5,20 +5,50 @@
 }
 
 .page {
-    width: 900px;
+    width: 100%;
+    /* width: 900px; */
     margin: 0 auto;
-    border: 3px solid black;
+    /* border: 3px solid black; */
+  
+   
 }
+
+#header{
+
+    background-color: black;
+    color: white;
+    display: flex;
+    width:100%;
+    height:100px;
+    padding: 5px;
+    margin: 2px;
+    justify-content: flex-end;
+     height: 88px;
+    align-items: flex-end;
+     
+}
+#header ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+   
+}
+
 
 #menu {
     background-color: black;
     color: white;
-    display: inline-block;
-    width: 890px;
-    height: 50px;
+    display: flex;
+    width:80%;
+    height: 45px;
     padding: 5px;
     position: relative;
-
+    justify-content: center;
+    margin: 0 auto;
+   /* text-align: center; */
 
 }
 
@@ -26,16 +56,22 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .menu_li {
     position: relative;
-    display: inline-block;
+    display: flex;
     margin-left: 10px;
     padding: 10px 5px;
 }
 
 .menu_li a {
+    display: flex;
     color: white;
     text-decoration: none;
 }
@@ -126,6 +162,9 @@ header {
     height: 50px;
     color: black;
    border-bottom: 2px solid rgb(167, 145, 145);
+   width: 80%;
+   display: flex;
+   margin: 0 auto;
 
 }
 .header-title {
@@ -165,12 +204,13 @@ header {
     width: 16%;
     padding: 8px;
     position: relative;
+   
 
 }
 .card::before {
     content: "";
     position: absolute;
-    left: -5px;
+    left: 2px;
     /* right:0; */
     top: 25%;
     height: 50%;
@@ -191,8 +231,11 @@ header {
 } */
 
 #cards {
-    display: flow-root;
+    /* display: flow-root; */
     position: relative;
+     width: 80%;
+   display: flex;
+   margin: 0 auto;
 }
 
 #arrows1 {
@@ -218,6 +261,9 @@ header {
 article {
     position: relative;
     height: 340px;
+    width: 80%;
+   display: flex;
+   margin: 0 auto;
 
 }
 
@@ -236,6 +282,7 @@ img {
     width: 52%;
     height: 100%;
 }
+
 
 #label_red {
     display: inline-block;
@@ -257,7 +304,8 @@ img {
 }
 
 #signature {
-    position: absolute;
+    position: fixed;
     bottom: 8px;
     right: 10px;
 }
+
