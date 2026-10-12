@@ -36,7 +36,19 @@
     padding: 0;
    
 }
-
+.header_li{
+    position: relative;
+}
+.header_li::before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    /* right:10%; */
+    top: 25%;
+    height: 50%;
+    width: 1px;
+    background-color: rgb(141, 128, 128);
+}
 
 #menu {
     background-color: black;
